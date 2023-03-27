@@ -1,11 +1,14 @@
 import React from 'react'
-import {Text, View, StyleSheet, Image} from 'react-native'
+import {Text, View, StyleSheet, Image, Button, Alert} from 'react-native'
 
 const App = () =>{
   return (
   <View style={styles.container}>
     <Text style={styles.title}>ola mundo</Text>
     <Image style={styles.img} source={{uri:'https://picsum.photos/200/200/'}}></Image>
+    <Button title='ola mundo button' onPress={() => Alert.alert('simple button pressed')}>
+
+    </Button>
   </View>
   );
 };
